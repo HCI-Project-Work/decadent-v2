@@ -1,3 +1,4 @@
+/* General styles */
 body {
     font-family: 'Merriweather', serif;
     background-color: #f4f4f4;
@@ -6,36 +7,46 @@ body {
     padding: 0;
 }
 
+/* Header styles */
 header#header {
     background-color: #fff;
     padding: 20px 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .navbar-brand img.logo {
     max-height: 60px;
 }
 
-.navbar-nav .nav-link {
-    color: #333;
+/* Navigation styles */
+.navbar-nav {
+    margin: auto;
+}
+
+.navbar-nav .nav-item {
     margin: 0 10px;
+}
+
+.navbar-nav .nav-link {
+    color: #333 !important;
     text-transform: uppercase;
+    font-weight: 700;
 }
 
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link.active {
-    color: #e91e63;
+.navbar-nav .nav-link:hover {
+    color: #e91e63 !important;
 }
 
-.contact-section {
+/* Contact Information section */
+.contact-information {
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     padding: 20px;
     margin: 20px 0;
 }
 
-.contact-section h2 {
+.contact-information h2 {
     color: #e91e63;
     margin-bottom: 20px;
 }
@@ -45,13 +56,18 @@ header#header {
     margin-bottom: 10px;
 }
 
-.contact-detail .detail p {
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
+.contact-detail .detail ul {
+    padding: 0;
+    list-style: none;
 }
 
-.contact-detail .detail p i {
+.contact-detail .detail ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-detail .detail ul li i {
     margin-right: 10px;
     color: #e91e63;
 }
@@ -62,11 +78,80 @@ header#header {
     font-size: 20px;
 }
 
+/* Contact Form */
 .contact-form input,
 .contact-form textarea {
     width: calc(50% - 10px);
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
-    border-radius: 4
+    border-radius: 4px;
+}
+
+.contact-form textarea {
+    width: 100%;
+    height: 150px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #e91e63;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #d81b60;
+}
+
+/* Footer styles */
+footer#footer {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.widget-title {
+    color: #e91e63;
+    margin-bottom: 10px;
+}
+
+.newsletter-button {
+    display: flex;
+}
+
+.newsletter-button input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+.newsletter-button button {
+    padding: 10px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    background-color: #e91e63;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter-button button:hover {
+    background-color: #d81b60;
+}
+
+.working-schedule .time-list {
+    display: flex;
+}
+
+.working-schedule .time-list ul {
+    padding: 0;
+    list-style: none;
+    margin-right: 20px;
 }
